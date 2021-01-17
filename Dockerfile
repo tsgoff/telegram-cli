@@ -8,3 +8,5 @@ FROM ubuntu
 RUN apt update && DEBIAN_FRONTEND=noninteractive apt -y install libevent-dev libjansson-dev libconfig-dev libreadline-dev liblua5.2-dev
 WORKDIR /data
 COPY --from=build /data/tg/bin/telegram-cli /usr/local/bin/telegram-cli
+
+ENTRYPOINT ["telegram-cli"]
