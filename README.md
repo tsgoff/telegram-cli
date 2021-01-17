@@ -8,5 +8,5 @@ Usage
 ============
 
 ```
-docker run --rm -v ~/.telegram-cli:/root/.telegram-cli bios/telegram -W -e "msg <peer> <text>"
+docker run --rm -v ~/.telegram-cli:/root/.telegram-cli bios/telegram-cli -W -e "msg <peer> <text>"
 ```
